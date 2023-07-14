@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Questão 7</title>
+</head>
+
+<body>
+  <script>
+    let numeros = [];
+    let numero = parseInt(prompt("Digite um número (digite 0 para finalizar):"));
+
+    while (numero !== 0) {
+      numeros.push(numero);
+      numero = parseInt(prompt("Digite um número (digite 0 para finalizar):"));
+    }
+
+    if (numeros.length === 0) {
+      alert("Nenhum número foi digitado.");
+    } else {
+      const maior = Math.max(...numeros);
+      const menor = Math.min(...numeros);
+
+      alert("Maior número: " + maior);
+      alert("Menor número: " + menor);
+    }
+  </script>
+</body>
+
+</html>

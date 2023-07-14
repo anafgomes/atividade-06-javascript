@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Questão 5</title>
+</head>
+
+<body>
+  <script>
+    function isPrime(number) {
+      if (number < 2) {
+        return false;
+      }
+
+      for (let i = 2; i < number; i++) {
+        if (number % i === 0) {
+          return false;
+        }
+      }
+
+      return true;
+    }
+
+    function displayPrimes(N) {
+      for (let i = 2; i < N; i++) {
+        if (isPrime(i)) {
+          alert(i);
+        }
+      }
+    }
+
+    const N = parseInt(prompt("Digite um número:"));
+    displayPrimes(N);
+  </script>
+</body>
+
+</html>

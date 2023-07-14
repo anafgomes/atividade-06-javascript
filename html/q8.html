@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Questão 8</title>
+</head>
+
+<body>
+  <script>
+    function contarVogais(frase) {
+      const vogais = ['a', 'e', 'i', 'o', 'u'];
+      let quantidadeVogais = 0;
+
+      for (let caractere of frase.toLowerCase()) {
+        if (vogais.includes(caractere)) {
+          quantidadeVogais++;
+        }
+      }
+
+      return quantidadeVogais;
+    }
+
+    const frase = prompt("Digite uma frase:");
+    const quantidadeVogais = contarVogais(frase);
+
+    alert(`A frase digitada possui ${quantidadeVogais} vogais.`);
+  </script>
+</body>
+
+</html>

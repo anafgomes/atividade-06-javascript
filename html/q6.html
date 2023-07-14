@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Questão 6</title>
+</head>
+
+<body>
+  <script>
+    var numero = parseInt(prompt("Digite um número:"));
+
+    var numeroAnterior = 0;
+    var numeroAtual = 1;
+
+    alert("Sequência de Fibonacci até " + numero + ":");
+    alert(numeroAnterior);
+
+    while (numeroAtual <= numero) {
+      alert(numeroAtual);
+      var proximoNumero = numeroAnterior + numeroAtual;
+      numeroAnterior = numeroAtual;
+      numeroAtual = proximoNumero;
+    }
+  </script>
+</body>
+
+</html>
